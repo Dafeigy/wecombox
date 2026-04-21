@@ -134,7 +134,6 @@ class WeComMessageEndpoint(Endpoint):
             # )
             # answer = response.get("answer") or json.dumps(response, ensure_ascii=False)
             # or using with RESTFUL which can pass `user`
-            chatflow_key = "app-w9ESS2d7udYrIa7rINyxb5d5"
             base_url = "http://localhost/v1/chat-messages"
             api_payload = {
                 "inputs": {},

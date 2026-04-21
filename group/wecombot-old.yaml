@@ -1,0 +1,29 @@
+settings:
+  - name: token
+    type: text-input
+    required: true
+    label:
+      en_US: Token
+      zh_Hans: Token
+      ja_JP: トークン
+  - name: encoding_aes_key
+    type: secret-input
+    required: true
+    label:
+      en_US: Encoding AES Key
+      zh_Hans: Encoding AES Key
+      ja_JP: Encoding AES Key
+  - name: chatflow_api_key
+    type: secret-input
+    required: true
+    label:
+      en_US: API Access Key for the Charflow
+      zh_Hans: 对话工作流的API访问密钥
+      ja_JP: 対話ワークフローのAPIアクセスキー 
+    placeholder:
+      en_US: API Key to access Chatflow.
+      zh_Hans: 输入用于挂载的企业微信的对话工作流的访问API密钥
+      ja_JP: WeCom メッセージに応答するアプリ/エ
+endpoints:
+  - endpoints/wecom_verify.yaml
+  - endpoints/wecom_messages.yaml
